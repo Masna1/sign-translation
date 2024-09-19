@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://cademy-images.b-cdn.net/deabc30e-1c75-4633-8e5a-b9f01dd63496/3b5d47e3-fb9e-45f4-9346-a579079521f8/original.jpeg?width=3840');
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 4rem;
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: shadow-pulse 2s ease-in-out infinite alternate;
+        }
+        @keyframes shadow-pulse {
+            from {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            to {
+                text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        pre {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        input[type="submit"],
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        input[type="submit"] {
+            background-color: #0b2848;
+        }
+        .button {
+            background-color: #0b2848;
+        }
+    </style>
+</head>
+<body>
+    <form action="/play" method="post">
+        <pre>{{ predicted_word }}</pre>
+        <input type="submit" value="Play">
+        <a href="/" class="button">Back</a>
+        <a href="/playyvideo" class="button">RETAKE</a>
+        
+        
+    </form>
+</body>
+</html>
